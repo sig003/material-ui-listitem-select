@@ -18,7 +18,7 @@
   const handleMouseOver = (e:any) => {    
     e.target.classList.add('Mui-focusVisible');  
   }
-  const handleMouseLeave = (e:any) => {        
+  const handleMouseOut = (e:any) => {        
     e.target.classList.remove('Mui-focusVisible');    
   }
 
@@ -28,7 +28,7 @@
 	key={i}
 	className='list'
 	onMouseOver={handleMouseOver}                                  
-	onMouseLeave={handleMouseLeave}
+	onMouseOut={handleMouseOut}
           >
 ```
 
