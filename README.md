@@ -15,11 +15,15 @@
 - Mouse over > Item background focus hoghlighting
 
 ```JAVASCRIPT
-  const handleMouseOver = (e:any) => {    
-    e.target.classList.add('Mui-focusVisible');  
+  import { MouseEvent } from 'react';
+
+  const handleMouseOver = (e: MouseEvent) => {  
+    const target: HTMLElement = e.target as HTMLElement;
+    target.classList.add('Mui-focusVisible');  
   }
-  const handleMouseOut = (e:any) => {        
-    e.target.classList.remove('Mui-focusVisible');    
+  const handleMouseOut = (e: MouseEvent) => {      
+    const target: HTMLElement = e.target as HTMLElement;
+    target.classList.remove('Mui-focusVisible');    
   }
 
   ...
